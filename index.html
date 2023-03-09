@@ -16,9 +16,9 @@
 </head>
 <body>
     <!-- header -->
-    <header class="w-[960px] mx-auto py-10">
+    <header class="py-10">
         <!-- top nav menu -->
-        <div class="navbar">
+        <div class="navbar w-[960px] mx-auto">
             <div class="flex-1">
               <a href="index.html">
                 <img src="images/logo-composition.png" alt="Composition">
@@ -34,7 +34,7 @@
                     Dropdown
                     <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
                   </a>
-                  <ul class="p-2 bg-red-500">
+                  <ul class="p-2 bg-red-500 divide-y">
                     <li><a>Blog</a></li>
                     <li><a>Other Question</a></li>
                   </ul>
@@ -42,6 +42,45 @@
                 <li><a href="">Link Text</a></li>
               </ul>
             </div>
+          </div>
+          <!-- header text/description -->
+          <div class="mt-10 py-10 border-t-[1px] border-gray-300">
+            <div class="w-[960px] mx-auto">
+                <p class="text-center w-3/4 mx-auto text-xl text-gray-500"><q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non diam erat. In fringilla massa ut nisi ullamcorper pellentesque</q></p>
+            </div>
+          </div>
+          <!-- slider / carousel -->
+          <div class="w-[960px] mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img src="images/slider-1.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="images/slider-2.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="images/slider-3.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="images/slider-4.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
           </div>
     </header>
 </body>
